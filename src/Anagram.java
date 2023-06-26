@@ -20,7 +20,7 @@ public class Anagram {
     }
     public static void main (String []args){
         System.out.println(isAnagram(new char[]{'p', 'o', 'l'} , new char[]{'p', 'o', 'o','l'} ));
-        System.out.println(isAnagram(new char[]{'s', 'i', 't'} , new char[]{'i', 'd', 's'} ));
+        System.out.println(isAnagram(new char[]{'s', 'i', 'd'} , new char[]{'i', 'd', 's'} ));
         System.out.println(isAnagram(new char[]{'b', 'i', 'g'} , new char[]{'b', 'i', 'g'} ));
         System.out.println(isAnagram(new char[]{} , new char[]{} ));
     }

@@ -2,24 +2,20 @@ public class AllPosssibilities {
     static int isPossible(int []a){
         int result = 0;
         int n = 0;
-        int i = 0;
         if(a.length == 0)return 0;
-        for(i = 0; i < a.length; i++){
-            n = n + i;
-            for(int j = 0; j < a.length; j++){
-                if(n == a[j]){
-                    n = 0;
+        while(n < a.length){
+            for(int i = 0; i < a.length; i++){
+                if(n == a[i]){
                     result = 1;
                     break;
                 }
-                else if(n != a[j] && j == a.length -1){
+                else if(n != a[i] && i == a.length -1){
                     result = 0;
                     return result;
                 }
-            
             }
+            n++;
         }
-       
         return result;
     }
     public static void main(String []agrs){
